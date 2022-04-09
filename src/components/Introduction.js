@@ -36,19 +36,19 @@ const Introduction = () => {
         challenge of learning new technologies.
       </Text>
       <HStack py={12}>
-        <Button size='lg' colorScheme='telegram' variant='outline' mx={2}>
-          <Link isExternal href='https://resume.io/r/FIVYyvn1m'>
+        <Link isExternal href='https://resume.io/r/FIVYyvn1m'>
+          <Button size='lg' colorScheme='telegram' variant='outline' mx={2}>
             <LinkIcon mr='10px' />
             RESUME
-          </Link>
-        </Button>
+          </Button>
+        </Link>
 
-        <Button size='lg' colorScheme='purple' variant='outline' mx={2}>
-          <Link isExternal href='https://github.com/Caryin'>
+        <Link isExternal href='https://github.com/Caryin'>
+          <Button size='lg' colorScheme='purple' variant='outline' mx={2}>
             <Icon as={FiGithub} w={5} h={5} mr='10px' />
             GITHUB
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </HStack>
     </VStack>
   );

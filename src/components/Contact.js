@@ -30,18 +30,18 @@ const Contact = () => {
 
       <Stack py={[7, 10, 20]} alignItems='center'>
         <HStack spacing='45px'>
-          <Button size='lg' colorScheme='purple' variant='outline'>
-            <EmailIcon mr={3} />
-            <Link isExternal href='mailto:yeecaryin@gmail.com'>
+          <Link isExternal href='mailto:yeecaryin@gmail.com'>
+            <Button size='lg' colorScheme='purple' variant='outline'>
+              <EmailIcon mr={3} />
               E-Mail
-            </Link>
-          </Button>
-          <Button size='lg' colorScheme='telegram' variant='outline'>
-            <Icon as={FaLinkedin} mr='10px' />
-            <Link isExternal href='https://www.linkedin.com/in/caryinyee/'>
+            </Button>
+          </Link>
+          <Link isExternal href='https://www.linkedin.com/in/caryinyee/'>
+            <Button size='lg' colorScheme='telegram' variant='outline'>
+              <Icon as={FaLinkedin} mr='10px' />
               LinkedIn
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </HStack>
       </Stack>
     </Container>
