@@ -2,14 +2,7 @@ import React from 'react';
 import ProfilePhoto from '../assets/ProfilePhoto.jpg';
 
 //chakraUI
-import {
-  VStack,
-  Heading,
-  Avatar,
-  useColorModeValue,
-  Text,
-  Image,
-} from '@chakra-ui/react';
+import { VStack, Heading, Avatar, useColorModeValue } from '@chakra-ui/react';
 
 const MyName = () => {
   const fontColor = useColorModeValue('gray.700', 'rgb(221, 217, 216)');
