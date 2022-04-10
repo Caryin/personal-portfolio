@@ -1,8 +1,8 @@
 //components
-import NavigationBar from './components/NavigationBar';
-import HomePage from './components/HomePage';
+import { Container, useBreakpointValue } from '@chakra-ui/react';
 import Contact from './components/Contact';
-import { useBreakpointValue } from '@chakra-ui/react';
+import HomePage from './components/HomePage';
+import NavigationBar from './components/NavigationBar';
 import ProjectCarousel from './components/ProjectCarousel';
 import ProjectTab from './components/ProjectTab';
 
@@ -16,16 +16,12 @@ const App = () => {
 
   const Project = projectComponents[projectDisplay];
   return (
-    <>
-      <div>
-        <NavigationBar />
-        <HomePage />
-      </div>
-      <div>{Project}</div>
-      <div>
-        <Contact />
-      </div>
-    </>
+    <Container maxW='container.lg' px={4}>
+      <NavigationBar />
+      <HomePage />
+      {Project}
+      <Contact />
+    </Container>
   );
 };
 
