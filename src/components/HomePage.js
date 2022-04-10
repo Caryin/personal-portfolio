@@ -11,7 +11,7 @@ const HomePage = () => {
       px={[0, 4, 4]}
       direction={{ base: 'column', sm: 'row' }}
       id='home'
-      py={[2, 10, 16]}
+      py={[2, 10, 28]}
     >
       <MyName />
       <Introduction />

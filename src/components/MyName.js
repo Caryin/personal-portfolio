@@ -7,7 +7,7 @@ import { VStack, Heading, Avatar, useColorModeValue } from '@chakra-ui/react';
 const MyName = () => {
   const fontColor = useColorModeValue('gray.700', 'rgb(221, 217, 216)');
   return (
-    <VStack py={6} pr={[0, 28]}>
+    <VStack py={[2, 6]} pr={[0, 28]}>
       <Heading size='sm' color={fontColor}>
         Hi, I'm
       </Heading>

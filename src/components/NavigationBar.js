@@ -19,7 +19,7 @@ const NavigationBar = () => {
   const modeIcon = useColorModeValue(<MoonIcon />, <SunIcon />);
 
   return (
-    <HStack justifyContent='space-between' px={[0, 4]} py={2}>
+    <HStack justifyContent='space-between' px={[0, 4]} py={[2, 4]}>
       <Heading size='lg' color={fontColor}>
         CY.
       </Heading>
