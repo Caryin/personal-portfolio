@@ -9,13 +9,10 @@ import {
   Button,
   Link,
   useColorModeValue,
-  Stack,
-  Center,
-  Spacer,
 } from '@chakra-ui/react';
 
 //icon
-import { EmailIcon, Icon } from '@chakra-ui/icons';
+import { Icon } from '@chakra-ui/icons';
 import { LinkIcon } from '@chakra-ui/icons';
 import { FiGithub } from 'react-icons/fi';
 
@@ -41,7 +38,6 @@ const Introduction = () => {
       <HStack
         py={8}
         alignItems='center'
-        // bg="red.500"
         w='full'
         justifyContent={['space-around', 'flex-start']}
         gap={4}
