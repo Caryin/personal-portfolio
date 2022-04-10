@@ -28,7 +28,7 @@ const Introduction = () => {
         Front End Developer
       </Heading>
       <Text as='i' color={fontColor} fontSize='xl'>
-        An ex-lawyer transforming into Front End Developer.
+        Ex-lawyer transforming into Front End Developer.
       </Text>
       <Text color={fontColor} fontSize='xl'>
         I enjoy building projects and discovering new technologies in the world
