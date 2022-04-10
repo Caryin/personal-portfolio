@@ -30,7 +30,6 @@ const Contact = () => {
       <HStack
         py={[7, 10, 20]}
         alignItems='center'
-        // w="full"
         gap={[2, 4]}
         justifyContent={['space-around', 'center']}
       >
