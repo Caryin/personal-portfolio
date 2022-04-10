@@ -3,7 +3,7 @@ import MyName from './MyName';
 import Introduction from './Introduction';
 
 //chakraUI
-import { Container, Flex } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 const HomePage = () => {
   return (
