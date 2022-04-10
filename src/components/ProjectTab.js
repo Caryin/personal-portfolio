@@ -20,7 +20,11 @@ import {
   Tab,
   TabPanels,
   TabPanel,
+  Link,
 } from '@chakra-ui/react';
+
+//chakraUI-icon
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 
 const Project = () => {
   const fontColor = useColorModeValue('gray.700', 'rgb(221, 217, 216)');
@@ -44,21 +48,29 @@ const Project = () => {
         color={fontColor}
         outline='none'
       >
-        <TabList>
+        <TabList justifyContent='space-around'>
           <Tab>Portfolio</Tab>
-          <Tab>My Momentum</Tab>
-          <Tab>Food App</Tab>
-          <Tab>Simple Checkout Page</Tab>
+          <Tab>
+            My Momentum <ExternalLinkIcon mx={1} />
+          </Tab>
+          <Tab>
+            Food App <ExternalLinkIcon mx={1} />
+          </Tab>
+          <Tab>ChakraUI Checkout Page</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
             <Image src={portfolio} />
           </TabPanel>
           <TabPanel>
-            <Image src={myMomentum} />
+            <Link href='https://mymomentum.vercel.app/' isExternal>
+              <Image src={myMomentum} />
+            </Link>
           </TabPanel>
           <TabPanel>
-            <Image src={foodApp} />
+            <Link href='https://food-order-me.vercel.app/' isExternal>
+              <Image src={foodApp} />
+            </Link>
           </TabPanel>
           <TabPanel>
             <Image src={checkoutPage} />
