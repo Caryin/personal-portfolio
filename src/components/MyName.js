@@ -14,7 +14,7 @@ const MyName = () => {
       <Heading size='2xl' color={fontColor} pb={3} mt={0}>
         Caryin
       </Heading>
-      <Avatar boxSize={['180px', '250px']} src={ProfilePhoto} name='Caryin' />
+      <Avatar boxSize={['200px', '250px']} src={ProfilePhoto} name='Caryin' />
     </VStack>
   );
 };
