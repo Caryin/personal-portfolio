@@ -64,31 +64,41 @@ const Project = () => {
       <Carousel responsive={responsive} swipeable={true} infinite={true}>
         <Box p={3} textAlign='center'>
           <Image src={portfolio} />
-          <Link fontSize='15px' color={fontColor}>
-            My Portfolio
-            <ExternalLinkIcon color={fontColor} m={2} />
-          </Link>
+          <Text fontSize='15px' m={1} color={fontColor}>
+            This Portfolio
+          </Text>
         </Box>
 
         <Box p={3} textAlign='center'>
           <Image src={myMomentum} />
-          <Link fontSize='15px' color={fontColor}>
-            My Momentum
+          <Link
+            fontSize='15px'
+            color={fontColor}
+            href='https://mymomentum.vercel.app/'
+            isExternal
+          >
+            Momentum
             <ExternalLinkIcon color={fontColor} m={2} />
           </Link>
         </Box>
 
         <Box p={3} textAlign='center'>
           <Image src={foodApp} />
-          <Text fontSize='15px' m={1} color={fontColor}>
-            Food App
-          </Text>
+          <Link
+            fontSize='15px'
+            color={fontColor}
+            href='https://food-order-me.vercel.app/'
+            isExternal
+          >
+            Food Order App
+            <ExternalLinkIcon color={fontColor} m={2} />
+          </Link>
         </Box>
 
         <Box p={3} textAlign='center'>
           <Image src={checkoutPage} />
           <Text fontSize='15px' m={1} color={fontColor}>
-            Simple Checkout Page
+            ChakraUI Checkout Page
           </Text>
         </Box>
       </Carousel>
