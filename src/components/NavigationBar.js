@@ -3,7 +3,6 @@ import { Link } from 'react-scroll';
 
 //chakraUI
 import {
-  Container,
   HStack,
   Heading,
   Button,
