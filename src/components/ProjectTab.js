@@ -53,7 +53,7 @@ const Project = () => {
           <Tab>
             Momentum <ExternalLinkIcon mx={1} />
           </Tab>
-          <Tab>Food App</Tab>
+          <Tab>Food Order App</Tab>
           <Tab>ChakraUI Checkout Page</Tab>
         </TabList>
         <TabPanels>

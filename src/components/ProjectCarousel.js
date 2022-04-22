@@ -84,9 +84,9 @@ const Project = () => {
 
         <Box p={3} textAlign='center'>
           <Image src={foodApp} />
-          <Link fontSize='15px' color={fontColor}>
+          <Text fontSize='15px' m={1} color={fontColor}>
             Food Order App
-          </Link>
+          </Text>
         </Box>
 
         <Box p={3} textAlign='center'>
