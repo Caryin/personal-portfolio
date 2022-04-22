@@ -51,11 +51,9 @@ const Project = () => {
         <TabList justifyContent='space-around'>
           <Tab>Portfolio</Tab>
           <Tab>
-            My Momentum <ExternalLinkIcon mx={1} />
+            Momentum <ExternalLinkIcon mx={1} />
           </Tab>
-          <Tab>
-            Food App <ExternalLinkIcon mx={1} />
-          </Tab>
+          <Tab>Food App</Tab>
           <Tab>ChakraUI Checkout Page</Tab>
         </TabList>
         <TabPanels>
@@ -68,9 +66,7 @@ const Project = () => {
             </Link>
           </TabPanel>
           <TabPanel>
-            <Link href='https://food-order-me.vercel.app/' isExternal>
-              <Image src={foodApp} />
-            </Link>
+            <Image src={foodApp} />
           </TabPanel>
           <TabPanel>
             <Image src={checkoutPage} />
