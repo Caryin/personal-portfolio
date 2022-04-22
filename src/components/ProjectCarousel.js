@@ -84,14 +84,8 @@ const Project = () => {
 
         <Box p={3} textAlign='center'>
           <Image src={foodApp} />
-          <Link
-            fontSize='15px'
-            color={fontColor}
-            href='https://food-order-me.vercel.app/'
-            isExternal
-          >
+          <Link fontSize='15px' color={fontColor}>
             Food Order App
-            <ExternalLinkIcon color={fontColor} m={2} />
           </Link>
         </Box>
 
