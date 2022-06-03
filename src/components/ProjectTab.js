@@ -7,6 +7,7 @@ import myMomentum from '../assets/myMomentum.png';
 import foodApp from '../assets/foodApp.png';
 import checkoutDark from '../assets/checkoutDark.png';
 import checkoutLight from '../assets/checkoutLight.png';
+import chatApp from '../assets/chatApp.png';
 
 //ChakraUI
 import {
@@ -53,6 +54,7 @@ const Project = () => {
           <Tab>
             Momentum <ExternalLinkIcon mx={1} />
           </Tab>
+          <Tab>Chat App</Tab>
           <Tab>Food Order App</Tab>
           <Tab>ChakraUI Checkout Page</Tab>
         </TabList>
@@ -64,6 +66,9 @@ const Project = () => {
             <Link href='https://mymomentum.vercel.app/' isExternal>
               <Image src={myMomentum} />
             </Link>
+          </TabPanel>
+          <TabPanel>
+            <Image src={chatApp} />
           </TabPanel>
           <TabPanel>
             <Image src={foodApp} />

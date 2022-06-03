@@ -11,6 +11,7 @@ import myMomentum from '../assets/myMomentum.png';
 import foodApp from '../assets/foodApp.png';
 import checkoutDark from '../assets/checkoutDark.png';
 import checkoutLight from '../assets/checkoutLight.png';
+import chatApp from '../assets/chatApp.png';
 
 //ChakraUI
 import {
@@ -80,6 +81,13 @@ const Project = () => {
             Momentum
             <ExternalLinkIcon color={fontColor} m={2} />
           </Link>
+        </Box>
+
+        <Box p={3} textAlign='center'>
+          <Image src={chatApp} />
+          <Text fontSize='15px' m={1} color={fontColor}>
+            Chat App
+          </Text>
         </Box>
 
         <Box p={3} textAlign='center'>
