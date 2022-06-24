@@ -12,6 +12,7 @@ import foodApp from '../assets/foodApp.png';
 import checkoutDark from '../assets/checkoutDark.png';
 import checkoutLight from '../assets/checkoutLight.png';
 import chatApp from '../assets/chatApp.png';
+import pokemonDashboard from '../assets/pokemonDashboard.png';
 
 //ChakraUI
 import {
@@ -79,6 +80,19 @@ const Project = () => {
             isExternal
           >
             Momentum
+            <ExternalLinkIcon color={fontColor} m={2} />
+          </Link>
+        </Box>
+
+        <Box p={3} textAlign='center'>
+          <Image src={pokemonDashboard} />
+          <Link
+            fontSize='15px'
+            color={fontColor}
+            href='https://catch-em-pokemons.vercel.app/'
+            isExternal
+          >
+            Catch em' All
             <ExternalLinkIcon color={fontColor} m={2} />
           </Link>
         </Box>
