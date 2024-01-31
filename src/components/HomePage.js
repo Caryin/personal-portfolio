@@ -1,19 +1,19 @@
 //components
-import MyName from './MyName';
-import Introduction from './Introduction';
+import MyAvatar from "./MyAvatar";
+import Introduction from "./Introduction";
 
 //chakraUI
-import { Flex } from '@chakra-ui/react';
+import { Flex } from "@chakra-ui/react";
 
 const HomePage = () => {
   return (
     <Flex
-      px={[0, 4, 4]}
-      direction={{ base: 'column', sm: 'row' }}
-      id='home'
+      id="home"
+      direction={{ base: "column", md: "row" }}
+      alignItems="center"
       py={[2, 10, 28]}
     >
-      <MyName />
+      <MyAvatar />
       <Introduction />
     </Flex>
   );

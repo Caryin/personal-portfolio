@@ -1,70 +1,57 @@
-import React from 'react';
+import React from "react";
+import SocialMediaButtons from "./SocialMediaButtons";
 
 //chakraUI
 import {
-  VStack,
-  HStack,
   Heading,
   Text,
-  Button,
-  Link,
+  Flex,
+  VStack,
+  keyframes,
   useColorModeValue,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 
-//icon
-import { Icon } from '@chakra-ui/icons';
-import { LinkIcon } from '@chakra-ui/icons';
-import { FiGithub } from 'react-icons/fi';
+import { motion } from "framer-motion";
 
 const Introduction = () => {
-  const fontColor = useColorModeValue('gray.700', 'rgb(221, 217, 216)');
+  const fontColor = useColorModeValue("gray.700", "rgb(221, 217, 216)");
+
+  const animationKeyframes = keyframes`
+  0% { transform: scale(1)  }
+  50% { transform: scale(1.15)  }
+  100% { transform: scale(1)  }
+  `;
+
+  const animation = `${animationKeyframes} 2s ease-in-out `;
 
   return (
-    <VStack my={6} alignItems='flex-start'>
-      <Heading size='sm' color='pink.500'>
-        INTRODUCTION
-      </Heading>
-      <Heading size='xl' color={fontColor} pt={2}>
-        Front End Developer
-      </Heading>
-      <Text as='i' color={fontColor} fontSize='xl'>
-        Ex-lawyer transforming into Front End Developer.
-      </Text>
-      <Text color={fontColor} fontSize='xl'>
-        I enjoy building projects and discovering new technologies in the world
-        of software development. I am a competitive person and I love the
-        challenge of learning new technologies.
-      </Text>
-      <HStack
-        py={8}
-        alignItems='center'
-        w='full'
-        justifyContent={['space-around', 'flex-start']}
-        gap={4}
-      >
-        <Button
-          as={Link}
-          isExternal
-          colorScheme='telegram'
-          variant='outline'
-          href='https://resume.io/r/FIVYyvn1m'
+    <Flex w="100%" p={4}>
+      <VStack w="100%" alignItems={{ base: "center", md: "flex-start" }}>
+        <Heading size="md" color={fontColor}>
+          Hi, I'm
+        </Heading>
+        <Heading
+          size="2xl"
+          color={fontColor}
+          pt={2}
+          pb={4}
+          as={motion.div}
+          animation={animation}
+          transition="2.5s ease"
         >
-          <LinkIcon mr='10px' />
-          RESUME
-        </Button>
+          Caryin Yee
+        </Heading>
+        <Text color={fontColor} fontSize="xl">
+          An experienced frontend developer with a legal background,{" "}
+          <strong>skilled in React</strong>, passionate about crafting
+          user-friendly and visually appealing web interfaces. Devoted to
+          continually enhancing skills and upholding industry best practices for
+          consistently delivering high-quality results.
+        </Text>
 
-        <Button
-          as={Link}
-          colorScheme='purple'
-          variant='outline'
-          isExternal
-          href='https://github.com/Caryin'
-        >
-          <Icon as={FiGithub} w={5} h={5} mr='10px' />
-          GITHUB
-        </Button>
-      </HStack>
-    </VStack>
+        <SocialMediaButtons />
+      </VStack>
+    </Flex>
   );
 };
 
