@@ -1,5 +1,4 @@
 import { Button, Link } from "@chakra-ui/react";
-import { LinkIcon } from "@chakra-ui/icons";
 
 const ActionButton = ({ children, colorScheme, href }) => {
   return (

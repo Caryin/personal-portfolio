@@ -1,9 +1,9 @@
-import { Flex, Button, Link } from "@chakra-ui/react";
-import { Icon, LinkIcon } from "@chakra-ui/icons";
-import { FiGithub } from "react-icons/fi";
-import { FaLinkedin } from "react-icons/fa";
-
 import ActionButton from "../ui/ActionButton";
+
+import { Icon, LinkIcon } from "@chakra-ui/icons";
+import { Flex } from "@chakra-ui/react";
+import { FaLinkedin } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 
 const SocialMediaButtons = () => {
   return (
