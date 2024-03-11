@@ -24,7 +24,7 @@ import {
 } from "@chakra-ui/react";
 
 //icon
-import { ExternalLinkIcon, InfoOutlineIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const Project = () => {
   const fontColor = useColorModeValue("gray.700", "rgb(221, 217, 216)");
