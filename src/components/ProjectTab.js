@@ -1,14 +1,11 @@
-import React from 'react';
+import React from "react";
 
 //Image
-import portfolioDark from '../assets/portfolioDark.png';
-import portfolioLight from '../assets/portfolioLight.png';
-import myMomentum from '../assets/myMomentum.png';
-import foodApp from '../assets/foodApp.png';
-import checkoutDark from '../assets/checkoutDark.png';
-import checkoutLight from '../assets/checkoutLight.png';
-import chatApp from '../assets/chatApp.png';
-import pokemonDashboard from '../assets/pokemonDashboard.png';
+import portfolioDark from "../assets/portfolioDark.png";
+import portfolioLight from "../assets/portfolioLight.png";
+import myMomentum from "../assets/myMomentum.png";
+import pokemonDashboard from "../assets/pokemonDashboard.png";
+import todoApp from "../assets/todoApp.png";
 
 //ChakraUI
 import {
@@ -23,44 +20,44 @@ import {
   TabPanels,
   TabPanel,
   Link,
-} from '@chakra-ui/react';
+  Text,
+  Box,
+} from "@chakra-ui/react";
 
 //chakraUI-icon
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { InfoOutlineIcon } from "@chakra-ui/icons";
 
 const Project = () => {
-  const fontColor = useColorModeValue('gray.700', 'rgb(221, 217, 216)');
+  const fontColor = useColorModeValue("gray.700", "rgb(221, 217, 216)");
   const portfolio = useColorModeValue(portfolioDark, portfolioLight);
-  const checkoutPage = useColorModeValue(checkoutDark, checkoutLight);
 
   return (
-    <Container maxW='container.lg' p={10} id='projects' my={6}>
+    <Container maxW="container.lg" p={10} id="projects" my={6}>
       <VStack>
-        <Heading size='md' color='pink.500'>
+        <Heading size="md" color="pink.500">
           PROJECTS
         </Heading>
-        <Heading color={fontColor} size='lg' textAlign='center' pt={3} pb={12}>
-          Build with React.
-        </Heading>
+        <Box display="flex" alignItems="center" pb={12} pt={3} gap={2}>
+          <InfoOutlineIcon color="gray.600" />
+          <Text color="gray.600" as="i">
+            Feel free to checkout the deployed projects by just clicking on the
+            screenshots!
+          </Text>
+        </Box>
       </VStack>
       <Tabs
-        align='center'
-        variant='enclosed'
-        colorScheme='purple'
+        isFitted
+        align="center"
+        variant="enclosed"
+        colorScheme="purple"
         color={fontColor}
-        outline='none'
+        outline="none"
       >
-        <TabList justifyContent='space-around'>
-          <Tab>Portfolio</Tab>
-          <Tab>
-            Momentum <ExternalLinkIcon mx={1} />
-          </Tab>
-          <Tab>
-            Catch em' All <ExternalLinkIcon mx={1} />
-          </Tab>
-          <Tab>Chat App</Tab>
-          <Tab>Food Order App</Tab>
-          <Tab>ChakraUI Checkout Page</Tab>
+        <TabList justifyContent="space-around">
+          <Tab>This Portfolio</Tab>
+          <Tab>To-do App</Tab>
+          <Tab>Catch em' All</Tab>
+          <Tab>Momentum</Tab>
         </TabList>
 
         <TabPanels>
@@ -69,27 +66,21 @@ const Project = () => {
           </TabPanel>
 
           <TabPanel>
-            <Link href='https://mymomentum.vercel.app/' isExternal>
-              <Image src={myMomentum} />
+            <Link href="https://my-todo-app-ts.vercel.app/" isExternal>
+              <Image src={todoApp} />
             </Link>
           </TabPanel>
 
           <TabPanel>
-            <Link href='https://catch-em-pokemons.vercel.app/' isExternal>
+            <Link href="https://catch-em-pokemons.vercel.app/" isExternal>
               <Image src={pokemonDashboard} />
             </Link>
           </TabPanel>
 
           <TabPanel>
-            <Image src={chatApp} />
-          </TabPanel>
-
-          <TabPanel>
-            <Image src={foodApp} />
-          </TabPanel>
-
-          <TabPanel>
-            <Image src={checkoutPage} />
+            <Link href="https://mymomentum.vercel.app/" isExternal>
+              <Image src={myMomentum} />
+            </Link>
           </TabPanel>
         </TabPanels>
       </Tabs>

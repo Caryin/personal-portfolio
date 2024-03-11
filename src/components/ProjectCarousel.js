@@ -1,18 +1,15 @@
-import React from 'react';
+import React from "react";
 
 //Carousell
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 //Image
-import portfolioDark from '../assets/portfolioDark.png';
-import portfolioLight from '../assets/portfolioLight.png';
-import myMomentum from '../assets/myMomentum.png';
-import foodApp from '../assets/foodApp.png';
-import checkoutDark from '../assets/checkoutDark.png';
-import checkoutLight from '../assets/checkoutLight.png';
-import chatApp from '../assets/chatApp.png';
-import pokemonDashboard from '../assets/pokemonDashboard.png';
+import portfolioDark from "../assets/portfolioDark.png";
+import portfolioLight from "../assets/portfolioLight.png";
+import myMomentum from "../assets/myMomentum.png";
+import pokemonDashboard from "../assets/pokemonDashboard.png";
+import todoApp from "../assets/todoApp.png";
 
 //ChakraUI
 import {
@@ -24,15 +21,14 @@ import {
   Image,
   Link,
   useColorModeValue,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 
 //icon
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { ExternalLinkIcon, InfoOutlineIcon } from "@chakra-ui/icons";
 
 const Project = () => {
-  const fontColor = useColorModeValue('gray.700', 'rgb(221, 217, 216)');
+  const fontColor = useColorModeValue("gray.700", "rgb(221, 217, 216)");
   const portfolio = useColorModeValue(portfolioDark, portfolioLight);
-  const checkoutPage = useColorModeValue(checkoutDark, checkoutLight);
 
   const responsive = {
     superLargeDesktop: {
@@ -53,43 +49,44 @@ const Project = () => {
     },
   };
   return (
-    <Container maxW='container.lg' p={[2, 10]} id='projects' my={6}>
+    <Container maxW="container.lg" p={[2, 10]} id="projects" my={6}>
       <VStack>
-        <Heading size='md' color='pink.500'>
+        <Heading size="md" color="pink.500">
           PROJECTS
         </Heading>
-        <Heading color={fontColor} size='lg' textAlign='center' pt={3} pb={12}>
-          Build with React.
-        </Heading>
+        <Text color="gray.600" as="i" pt={3} pb={5} fontSize="15px">
+          Feel free to checkout the deployed projects by just clicking on the
+          screenshots!
+        </Text>
       </VStack>
 
       <Carousel responsive={responsive} swipeable={true} infinite={true}>
-        <Box p={3} textAlign='center'>
+        <Box textAlign="center">
           <Image src={portfolio} />
-          <Text fontSize='15px' m={1} color={fontColor}>
+          <Text fontSize="15px" m={1} color={fontColor}>
             This Portfolio
           </Text>
         </Box>
 
-        <Box p={3} textAlign='center'>
-          <Image src={myMomentum} />
+        <Box textAlign="center">
+          <Image src={todoApp} />
           <Link
-            fontSize='15px'
+            fontSize="15px"
             color={fontColor}
-            href='https://mymomentum.vercel.app/'
+            href="https://my-todo-app-ts.vercel.app/"
             isExternal
           >
-            Momentum
+            To-do App
             <ExternalLinkIcon color={fontColor} m={2} />
           </Link>
         </Box>
 
-        <Box p={3} textAlign='center'>
+        <Box textAlign="center">
           <Image src={pokemonDashboard} />
           <Link
-            fontSize='15px'
+            fontSize="15px"
             color={fontColor}
-            href='https://catch-em-pokemons.vercel.app/'
+            href="https://catch-em-pokemons.vercel.app/"
             isExternal
           >
             Catch em' All
@@ -97,25 +94,17 @@ const Project = () => {
           </Link>
         </Box>
 
-        <Box p={3} textAlign='center'>
-          <Image src={chatApp} />
-          <Text fontSize='15px' m={1} color={fontColor}>
-            Chat App
-          </Text>
-        </Box>
-
-        <Box p={3} textAlign='center'>
-          <Image src={foodApp} />
-          <Text fontSize='15px' m={1} color={fontColor}>
-            Food Order App
-          </Text>
-        </Box>
-
-        <Box p={3} textAlign='center'>
-          <Image src={checkoutPage} />
-          <Text fontSize='15px' m={1} color={fontColor}>
-            ChakraUI Checkout Page
-          </Text>
+        <Box textAlign="center">
+          <Image src={myMomentum} />
+          <Link
+            fontSize="15px"
+            color={fontColor}
+            href="https://mymomentum.vercel.app/"
+            isExternal
+          >
+            Momentum
+            <ExternalLinkIcon color={fontColor} m={2} />
+          </Link>
         </Box>
       </Carousel>
     </Container>

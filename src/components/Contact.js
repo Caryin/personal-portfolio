@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 //chakraUI
 import {
@@ -9,48 +9,48 @@ import {
   Icon,
   useColorModeValue,
   VStack,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 
 //chakraUI-icon
-import { EmailIcon } from '@chakra-ui/icons';
-import { FaLinkedin } from 'react-icons/fa';
+import { EmailIcon } from "@chakra-ui/icons";
+import { FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
-  const fontColor = useColorModeValue('gray.700', 'rgb(221, 217, 216)');
+  const fontColor = useColorModeValue("gray.700", "rgb(221, 217, 216)");
 
   return (
-    <VStack id='contact' pb={32}>
-      <Heading size='md' color='pink.500' textAlign='center' pt={20}>
+    <VStack id="contact" pb={32}>
+      <Heading size="md" color="pink.500" textAlign="center" pt={20}>
         CONTACT
       </Heading>
-      <Heading color={fontColor} size='lg' textAlign='center' pt={3}>
-        Contact Me
+      <Heading color={fontColor} size="lg" textAlign="center" pt={3}>
+        Connect with me!
       </Heading>
 
       <HStack
         py={[7, 10, 20]}
-        alignItems='center'
+        alignItems="center"
         gap={[2, 4]}
-        justifyContent={['space-around', 'center']}
+        justifyContent={["space-around", "center"]}
       >
         <Button
           as={Link}
           isExternal
-          href='mailto:yeecaryin@gmail.com'
-          colorScheme='purple'
-          variant='outline'
+          href="mailto:yeecaryin@gmail.com"
+          colorScheme="purple"
+          variant="outline"
         >
-          <EmailIcon mr='10px' />
+          <EmailIcon mr="10px" />
           E-Mail
         </Button>
         <Button
           as={Link}
           isExternal
-          href='https://www.linkedin.com/in/caryinyee/'
-          colorScheme='telegram'
-          variant='outline'
+          href="https://www.linkedin.com/in/caryinyee/"
+          colorScheme="telegram"
+          variant="outline"
         >
-          <Icon as={FaLinkedin} mr='10px' />
+          <Icon as={FaLinkedin} mr="10px" />
           LinkedIn
         </Button>
       </HStack>
